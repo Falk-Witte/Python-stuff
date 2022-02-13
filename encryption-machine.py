@@ -1,7 +1,7 @@
 #!bin/python3
 import time
 from database import pass_data
-import hashlib
+from passlib.hash import pbkdf2_sha256
 
 def encryption_machine():
   import pyfiglet
@@ -19,29 +19,42 @@ def encryption_machine():
       
   i = rot13(f)
 
+  print("Output of rot13=>", i)
+
   a = pyfiglet.figlet_format(i, font='hex')
 
   print("Encoded text=> ", a)
 
-  print("Number of letters moved in rot13:",len(f))
+  #print("Number of letters moved in rot13:",len(f))
 
 
 #password authentication
-i = input("Please enter password to continue=> ")
+try:
+  i = input("Please enter password to continue=> ")
 
-h = hashlib.md5(i.encode())
-ha = h.hexdigest()
+  print(pbkdf2_sha256.verify(i, pass_data()))
+except:
+  print('\n')
+  print("An error has occured")
 
 #the .sleep is just there to make it look like the programm is actually doing something that take a second instead of just 
 #checking if two values are the same
 
 #initialization loop 
-if pass_data() in str(ha):
-  time.sleep(1)
-  print(encryption_machine())
-else:
-  time.sleep(1)
-  print("Wrong password")
+try:
+  if pbkdf2_sha256.verify(i, pass_data()) == True:
+    time.sleep(1)
+    encryption_machine()
+
+  else:
+    # time.sleep(1)
+    # print("Wrong password")
+    time.sleep(1)
+    print("Cancelling Process...")
+    time.sleep(1)
+except:
+  print('\n')
+  print("An error has occured")
   time.sleep(1)
   print("Cancelling Process...")
   time.sleep(1)
