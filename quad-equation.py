@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from http.cookiejar import FileCookieJar
 import math 
 from math import sqrt
 import pyfiglet
