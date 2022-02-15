@@ -24,7 +24,7 @@ def my_calculator():
 
     return
 
-print(my_calculator())    
+my_calculator()   
 
 
 
