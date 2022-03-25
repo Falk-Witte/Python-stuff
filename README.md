@@ -21,5 +21,5 @@ A program to solve the quadratic equation
 A rock, paper, scissors game.
 <br>
 <h3>sudoku-solver.py</h3>
-<br>
 Like the name suggests a sudoku solver.
+<br>
