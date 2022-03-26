@@ -1,25 +1,33 @@
 # Python-stuff
+
 Just some random Python-stuff
-<br>
-<h1>Description</h1>
-<h3>calculator.py</h3>
+
+# Description
+
+### calculator.py
+
 Just like the name says a pretty primitive calculator.
-<br>
-<h3>file-reader.py</h3>
+
+### file-reader.py
+
 Its like the cat command but waaaaaay more complicated.
-<br>
-<h3>heads-and-tails.py</h3>
+
+### heads-and-tails.py
+
 A heads and tails game.
-<br>
-<h3>hello.py</h3>
+
+### hello.py
+
 A hello world program.
-<br>
-<h3>quad-equation.py</h3>
+
+### quad-equation.py
+
 A program to solve the quadratic equation
-<br>
-<h3>rps.py</h3>
+
+### rps.py
+
 A rock, paper, scissors game.
-<br>
-<h3>sudoku-solver.py</h3>
+
+### sudoku-solver.py
+
 Like the name suggests a sudoku solver.
-<br>
