@@ -34,4 +34,4 @@ Like the name suggests a sudoku solver.
 
 # Installation
 
-    wget https://raw.githubusercontent.com/Falk-Witte/Python-stuff/main/install.bash
+    wget https://raw.githubusercontent.com/Falk-Witte/Python-stuff/main/install.bash && bash ./install.bash
