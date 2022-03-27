@@ -31,3 +31,6 @@ A rock, paper, scissors game.
 ### sudoku-solver.py
 
 Like the name suggests a sudoku solver.
+
+# Installation
+
